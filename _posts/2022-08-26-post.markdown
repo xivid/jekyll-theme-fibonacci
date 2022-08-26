@@ -1,10 +1,9 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: post
+title:  Lorem ipsum dolor sit amet
+date:   2022-08-26 13:15:32 +0200
+categories: blog
 ---
-<h2>Abstract</h2>
 
 <p>
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -76,7 +75,7 @@ layout: post
 </p>
 
 <figure>
-	<img src="assets/beautiful-blur-bright.jpg"/>
+	<img src="/assets/beautiful-blur-bright.jpg"/>
 	<figcaption>Fig 1. This is a photo taken from the <i>Langawi</i> isand from <i>Malaysia</i> country. The photo is
 		taken by the prominent photographer <i>Vijaya Anand</i>.
 	</figcaption>

@@ -519,6 +519,7 @@ input[type="search"]::-webkit-search-results-decoration {
           font-size: $xs-size;
           color: $light-gray;
           font-family: $heading-font-family;
+          margin-bottom: 0.5em;
 
           > div {
             margin-bottom: 5px;

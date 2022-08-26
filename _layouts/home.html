@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<main class="main about">
+	<article>
+		<header>
+			<h1>{{ site.title }}</h1>
+		</header>
+
+		{%- if page.photo -%}
+		<figure class="full">
+			<img src="{{ page.photo }}" alt="Author">
+		</figure>
+		{%- endif -%}
+
+		{{ content }}
+
+		<div class="social">
+			<a href="#">
+				Facebook
+			</a>
+			<span class="separator">&bull;</span>
+			<a href="#">
+				LinkedIn
+			</a>
+			<span class="separator">&bull;</span>
+			<a href="#">
+				Twitter
+			</a>
+		</div>
+	</article>
+</main>
