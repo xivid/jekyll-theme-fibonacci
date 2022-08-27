@@ -4,6 +4,7 @@ layout: default
 
 <main class="main post-detail">
 	<article itemscope itemtype="http://schema.org/BlogPosting">
+		
 		<header>
 			<div class="title-and-meta">
 				<h1>{{ page.title | escape }}</h1>
@@ -27,21 +28,19 @@ layout: default
 						</span>
 					</div>
 
-					{%- if false -%}
+					{%- if page.categories -%}
 					<div class="tagged-in">
 						<span class="icon tag"></span>
 						<ul>
+							{%- for category in page.categories -%}
 							<li>
-								<a href="#">#javascript</a>
+								{{ category }}
 							</li>
-							<li>
-								<a href="#">#css</a>
-							</li>
-							<li>
-								<a href="#">#html</a>
-							</li>
+							{%- endfor -%}
 						</ul>
 					</div>
+					{%- endif -%}
+					{%- if false -%}
 					<div class="total-comments">
 						<span class="icon comment"></span>
 						<a href="#">107 Comments</a>

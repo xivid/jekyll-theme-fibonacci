@@ -72,22 +72,22 @@ h6 {
 h1 {
   font-size: $h1-font-size;
   margin-top: $xl-size;
-  margin-bottom: $xxxl-size;
+  margin-bottom: $xl-size;
   color: $body-color;
-
-  &::after {
-    display: block;
-    content: '';
-    border-bottom: solid 6px $border-color;
-    margin-top: $xl-size;
-    width: 40%;
-  }
 }
 
 h2 {
   font-size: $h2-font-size;
   margin-top: 1.8rem;
   margin-bottom: $md-size;
+
+  &::after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px $border-color;
+    margin-top: $md-size;
+    width: 100%;
+  }
 }
 
 h3 {
@@ -127,7 +127,7 @@ a:active {
 // Lists.
 ul,
 ol {
-  padding-left: 0;
+  padding-left: 1rem;
   margin-top: 0;
   margin-bottom: $md-size;
 }
@@ -139,7 +139,7 @@ blockquote {
   border-radius: $border-radius;
   color: $medium-gray;
   font-size: $md-size;
-  margin-top: $md-size;
+  margin-top: $lg-size;
   margin-bottom: $lg-size;
   font-family: $heading-font-family;
 
@@ -168,7 +168,9 @@ blockquote {
 figure {
   margin-top: $md-size;
   margin-bottom: $lg-size;
-
+  margin-left: 0;
+  margin-right: 0;
+  
   img {
     display: block;
     width: 100%;
@@ -256,10 +258,10 @@ pre {
     font-size: $xs-size;
     letter-spacing: normal;
 
-    &.hljs {
-      padding: 0;
-      background: transparent;
-    }
+    // &.hljs {
+    //   padding: 0;
+    //   background: transparent;
+    // }
   }
 }
 
@@ -519,7 +521,7 @@ input[type="search"]::-webkit-search-results-decoration {
           font-size: $xs-size;
           color: $light-gray;
           font-family: $heading-font-family;
-          margin-bottom: 0.5em;
+          margin-bottom: $md-size;
 
           > div {
             margin-bottom: 5px;
@@ -596,7 +598,7 @@ input[type="search"]::-webkit-search-results-decoration {
           }
 
           .tagged-in {
-            font-style: italic;
+            // font-style: italic;
 
             li {
               margin-right: 0.125rem;
@@ -626,9 +628,9 @@ input[type="search"]::-webkit-search-results-decoration {
               align-items: center;
             }
 
-            .posted-date .date {
-              min-width: 6.58rem;
-            }
+            // .posted-date .date {
+            //   min-width: 6.58rem;
+            // }
 
             .total-comments a {
               min-width: 5.25rem;

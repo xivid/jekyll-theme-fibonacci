@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="{{ site.description }}">
 	<meta name="keywords" content="{{ site.keywords }}">
-	<title>{%- if page.title -%}{{ page.title }}{{ " - " }}{%- endif -%}{{ site.title }}</title>
+	<title>{%- if page.title -%}{{ page.title }}{{ " - " }}{%- elsif layout.title -%}{{ layout.title }}{{ " - " }}{%- endif -%}{{ site.title }}</title>
 	<link rel="stylesheet" type="text/css" href="{{ "assets/fibonacci.css" | relative_url }}">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>

@@ -1,19 +1,39 @@
-.about {
+.about {  
   article {
     p {
-      font-size: $lead-para-font-size;
       position: relative;
     }
   }
-
+  
+  @media only screen and (min-width: 836px) {
+  .intro {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
+  .intro .photo {
+    margin-top: 0.5rem;
+    display: block;
+    width: 85%; 
+  }
+  
+  .intro .photo img {
+    border-radius: 3px;
+  }
+  
+  li {
+    margin-bottom: 0.15em;
+  }
+  
   .social {
     display: flex;
     font-family: $heading-font-family;
-    font-size: $xs-size;
-    color: $light-gray;
+    font-size: $md-size;
+    color: $heavy-gray;
     justify-content: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    // text-transform: uppercase;
+    // letter-spacing: 1px;
     border-top: solid 1px $dim-gray;
     border-bottom: solid 1px $dim-gray;
     padding-top: $md-size;

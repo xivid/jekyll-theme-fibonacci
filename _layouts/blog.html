@@ -1,30 +1,17 @@
 ---
 layout: default
+title: Blog
 ---
 
-<main class="main">
+<main class="main blog">
 	<article>
-		{%- if page.title -%}
-		<h1>{{ page.title }}</h1>
-		{%- endif -%}
+		<h1>Blog</h1>
 		
 		{{ content }}
 		
 		{%- if site.posts.size > 0 -%}
 
 			{%- for post in site.posts -%}
-			<!-- <li>
-				{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-				<span class="post-meta">{{ post.date | date: date_format }}</span>
-				<h3>
-				<a class="post-link" href="{{ post.url | relative_url }}">
-					{{ post.title | escape }}
-				</a>
-				</h3>
-				{%- if site.show_excerpts -%}
-				{{ post.excerpt }}
-				{%- endif -%}
-			</li> -->
 			<article>
 				<header>
 					<div class="title-and-meta">
@@ -42,21 +29,19 @@ layout: default
 								<span class="icon calendar"></span>
 								<span class="date">{{ post.date | date: date_format }}</span>
 							</div>
-							{%- if false -%}
+							{%- if post.categories -%}
 							<div class="tagged-in">
 								<span class="icon tag"></span>
 								<ul>
+									{%- for category in post.categories -%}
 									<li>
-										<a href="#">#javascript</a>
+										{{ category }}
 									</li>
-									<li>
-										<a href="#">#css</a>
-									</li>
-									<li>
-										<a href="#">#html</a>
-									</li>
+									{%- endfor -%}
 								</ul>
 							</div>
+							{%- endif -%}
+							{%- if false -%}
 							<div class="total-comments">
 								<span class="icon comment"></span>
 								<a href="#">107 Comments</a>
