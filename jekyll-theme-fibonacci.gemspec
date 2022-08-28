@@ -3,11 +3,11 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-fibonacci"
   spec.version       = "0.1.0"
-  spec.authors       = [""]
-  spec.email         = [""]
+  spec.authors       = ["Zhifei Yang"]
+  spec.email         = ["xividyzf@gmail.com"]
 
   spec.summary       = "Jekyll Theme Fibonacci"
-  spec.homepage      = "https://github.com/Xivid/jekyll-theme-fibonacci"
+  spec.homepage      = "https://github.com/xivid/jekyll-theme-fibonacci"
   spec.license       = "MIT"
 
   spec.metadata["plugin_type"] = "theme"

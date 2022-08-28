@@ -1,14 +1,10 @@
 # jekyll-theme-fibonacci
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+This is the Jekyll port of an open-source blog template: [fibonacci](https://github.com/VJAI/fibonacci).
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+## Demo
 
-TODO: Delete this and the text above, and describe your gem
-
-## Screenshot
-
-TODO: add screenshot
+[https://zhifei.me](https://zhifei.me)
 
 ## Installation
 
@@ -34,7 +30,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Just like any other simple jekyll themes.
 
 ## Contributing
 
