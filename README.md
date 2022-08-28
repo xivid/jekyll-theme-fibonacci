@@ -30,7 +30,9 @@ Or install it yourself as:
 
 ## Usage
 
-Just like any other simple jekyll themes.
+Just like any other simple jekyll themes. Additional configurations in `_config.yml` you might want to use:
+
+- `subtitle`: the one-liner subtitle on the home page.
 
 ## Contributing
 
